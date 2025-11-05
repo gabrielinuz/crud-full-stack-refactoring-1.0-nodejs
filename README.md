@@ -4,6 +4,19 @@ Prototipo de CRUD Full Stack refactorizado versión 1.0
 
 ```En este refactoring se hizo agregado de paginador, solo se utiliza el módulo students para demostrar cómo implementar el backend con NodeJS.
 
+## Configuración Inicial de Node.js
+1-Descarga e instala Node.js: https://nodejs.org/es/download
+
+2-Necesitas inicializar tu proyecto Node.js y guardar los módulos necesarios.
+
+    Instrucciones (no es código):
+
+    Navega a la carpeta backend/ en tu terminal.
+
+    Inicializa el proyecto: npm init -y
+
+    Instala Express, CORS (necesario para que el frontend pueda hablar con el backend en desarrollo) y el cliente MySQL: npm install express cors mysql2
+
 # Estructura de proyecto:
 ```/
 ├── backend/
