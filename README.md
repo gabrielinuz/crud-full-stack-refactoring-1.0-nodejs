@@ -36,7 +36,6 @@ Prototipo de CRUD Full Stack refactorizado versión 1.0
 │   │   └── studentsSubjectsRepository.js
 │   │   └── subjectRepository.js 
 │   ├── routes/
-│   │   └── routesFactory.js
 │   │   └── studentsRoutes.js
 │   │   └── studentsSubjectsRoutes.js
 │   │   └── subjectRoutes.js 
