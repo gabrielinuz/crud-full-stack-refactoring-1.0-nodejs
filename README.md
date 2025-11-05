@@ -15,7 +15,10 @@ Prototipo de CRUD Full Stack refactorizado versión 1.0
 
     Inicializa el proyecto: npm init -y
 
-    Instala Express, CORS (necesario para que el frontend pueda hablar con el backend en desarrollo) y el cliente MySQL: npm install express cors mysql2
+    Instala Express, CORS 
+    (necesario para que el frontend pueda "hablar" 
+    con el backend en desarrollo) y el cliente MySQL: 
+        npm install express cors mysql2
 
 # Estructura de proyecto:
 ```/
