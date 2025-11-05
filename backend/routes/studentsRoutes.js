@@ -1,7 +1,6 @@
 /**
 * File        : backend/routes/studentsRoutes.js
 * Project     : CRUD Node.js
-* Author      : Gemini (Adaptación)
 * Date        : Noviembre 2025
 * Status      : Implemented (Routes Only)
 */
