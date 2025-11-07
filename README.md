@@ -20,6 +20,11 @@ Prototipo de CRUD Full Stack refactorizado versión 1.0
     con el backend en desarrollo) y el cliente MySQL: 
         npm install express cors mysql2
 
+3-Iniciar el servidor desde una terminal en el directorio backend:
+    node server.js
+
+4-En el navegador web acceder desde: http://localhost:3000
+
 # Estructura de proyecto:
 ```/
 ├── backend/

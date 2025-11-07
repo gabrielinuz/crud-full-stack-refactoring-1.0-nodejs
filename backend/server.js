@@ -4,15 +4,27 @@
 * Date        : Noviembre 2025
 * Status      : Implemented
 */
+
+//Instancia de express para manejo de toda la API REST
+const app = express();
+const PORT = 3000; // Puedes usar otro puerto si lo necesitas
+
+// Necesario para __dirname en módulos ES6
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
 import express from 'express';
 import cors from 'cors';
+
+// SERVIR ARCHIVOS ESTÁTICOS DEL FRONTEND:
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+//importar distintos manejos de rutas por módulo:
 import studentsRouter from './routes/studentsRoutes.js';
 // Importa los routers de las otras rutas (subjects, studentsSubjects) cuando los crees
 // import subjectsRouter from './routes/subjectsRoutes.js'; 
 // import studentsSubjectsRouter from './routes/studentsSubjectsRoutes.js'; 
-
-const app = express();
-const PORT = 3000; // Puedes usar otro puerto si lo necesitas
 
 // ===================================
 // MIDDLEWARES
@@ -25,9 +37,12 @@ app.use(cors());
 // 2. Body Parser: Express usa JSON en el body de las peticiones (POST/PUT/DELETE)
 app.use(express.json());
 
-// 3. Health Check
+// 3. Servir archivos estáticos desde ../frontend
+app.use(express.static(path.join(__dirname, '..', 'frontend')));
+
+// 4. Redirigir la ruta raíz (/) al index.html
 app.get('/', (req, res) => {
-    res.send('Servidor Node.js CRUD corriendo. OK.');
+    res.sendFile(path.join(__dirname, '..', 'frontend', 'html', 'index.html'));
 });
 
 // ===================================
@@ -46,5 +61,5 @@ app.use('/api/students', studentsRouter);
 // ===================================
 app.listen(PORT, () => {
     console.log(`Servidor Node.js corriendo en http://localhost:${PORT}`);
-    console.log(`El endpoint de estudiantes es http://localhost:${PORT}/api/students`);
+    // console.log(`El endpoint de estudiantes es http://localhost:${PORT}/api/students`);
 });
