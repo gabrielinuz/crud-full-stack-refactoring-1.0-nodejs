@@ -7,7 +7,7 @@
 */
 
 // EL NUEVO PUERTO Y PREFIJO DEL BACKEND DE NODE.JS
-// Asegúrate de que el PORT y el prefijo coincidan con tu server.js (ej: 3000 y /api/)
+// Asegurarse de que el PORT y el prefijo coincidan con el de server.js (ej: 3000 y /api/)
 const NODE_API_PREFIX = 'http://localhost:3000/api/'; 
 
 export function createAPI(moduleName, config = {}) 
