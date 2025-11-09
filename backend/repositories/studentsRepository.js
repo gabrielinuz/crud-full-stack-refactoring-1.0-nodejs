@@ -18,7 +18,7 @@ export async function getPaginatedStudents(limit, offset)
 export async function getTotalStudents() 
 {
     const [rows] = await db.query("SELECT COUNT(*) AS total FROM students");
-    // Tu PHP original retornaba el valor 'total'
+    // El CRUD en PHP original retornaba el valor 'total'
     return rows[0].total; 
 }
 
@@ -45,7 +45,7 @@ export async function updateStudent(id, fullname, email, age)
 
 export async function deleteStudent(id) 
 {
-    // Nota: Aquí iría la lógica de validación de FK (como en tu studentsController.php comentado)
+    // Nota: Aquí podría ir la lógica de validación de FK (como en studentsController.php)
     
     const [result] = await db.query(
         "DELETE FROM students WHERE id = ?", 

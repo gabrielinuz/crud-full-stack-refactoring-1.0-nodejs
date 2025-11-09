@@ -6,7 +6,7 @@
 */
 import mysql from 'mysql2/promise';
 
-// Reemplaza estos valores con los de tu databaseConfig.php
+// Reemplaza estos valores con los del archivo anterior databaseConfig.php
 const pool = mysql.createPool({
     host: 'localhost',      // El host que usabas en PHP ($host)
     user: 'student',           // El usuario que usabas en PHP ($user)
@@ -20,4 +20,4 @@ const pool = mysql.createPool({
 export default pool;
 
 // NOTA: Para usar 'import/export' en Node.js, se debe agregar
-// "type": "module" a tu archivo package.json.
+// "type": "module" a archivo package.json.
