@@ -7,7 +7,7 @@
 
 //Instancia de express para manejo de toda la API REST
 const app = express();
-const PORT = 3000; // Puedes usar otro puerto si lo necesitas
+const PORT = 3000; // Se puede usar otro puerto si es necesario
 
 // Necesario para __dirname en módulos ES6
 const __filename = fileURLToPath(import.meta.url);
