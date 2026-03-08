@@ -53,7 +53,8 @@ Prototipo de CRUD Full Stack refactorizado versión 1.0
 │   ├── html/
 │   │   └── students.html  
 │   │   └── studentsSubjects.html   
-│   │   └── subjects.html  
+│   │   └── subjects.html
+│   │   └── index.html
 │   ├── img/
 │   │   └── favicon.png 
 │   ├── js/
@@ -66,5 +67,3 @@ Prototipo de CRUD Full Stack refactorizado versión 1.0
 │   │   |   └── studentsFrontController.js
 │   │   |   └── studentsSubjectsFrontController.js
 │   │   |   └── subjectsFrontController.js
-|   
-└── index.html
